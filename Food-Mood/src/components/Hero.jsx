@@ -5,6 +5,8 @@ import leaf2 from '../assets/leaf_2.png'
 import leaf3 from '../assets/leaf_3.png'
 import mushroom from '../assets/mushroom.png'
 import tomato from '../assets/tomato_2.png'
+import points from '../assets/points_2.png'
+import points2 from '../assets/points.png'
 const Hero = () => {
     return (
         <div className="h-[140vh] relative">
@@ -14,6 +16,8 @@ const Hero = () => {
             <img src={leaf2} alt="" className='right-20 top-[500px] absolute rotator' />
             <img src={leaf3} alt="" className='left-10 top-96 absolute rotator' />
             <img src={tomato} alt="" className='left-[650px] top-[550px] absolute rotator' />
+            <img src={points} alt="" className='left-0 top-52 absolute ' />
+            <img src={points2} alt="" className='left-[500px] top-52 absolute ' />
             <div className='absolute h-full w-full flex justify-center gap-32 items-start mt-32'>
                 <div>
                     <img src={burgerLogo} alt="logo" className='w-[500px] trans hidden lg:block' />

@@ -16,6 +16,7 @@ const Intro = () => {
                 <h1 className='text-5xl pt-2 font-[gorg-medium] font-semibold '>From Varanasi With  </h1>
                 <h1 className='text-5xl font-[gorg-medium]  font-semibold '>Indian Love </h1>
                 <p className='w-96 pt-4 text-md text-slate-700'>FoodMood is an Indian chain of fast food restaurants, which has an experience of opening more than 170 restaurants in 10 countries of the world. Thus the restaurants of the new generation had emerged in 2017.</p>
+                <button className='bg-[#F7B035] hover:bg-white hover:text-[#F7B035] hover:border-[#F7B035] hover:border transition-all text-white text-lg px-6 mt-5 cursor-pointer uppercase font-[head] py-3 rounded-full'>Order Now</button>
             </div>
         </div>
     )

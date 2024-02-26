@@ -4,12 +4,14 @@ const Hero = () => {
     return (
         <div className="h-[140vh] relative">
             <img src={heroBg} alt="" className='h-full absolute' />
-            <div className='absolute h-full w-full flex justify-center gap-44 items-center'>
+            <div className='absolute h-full w-full flex justify-center gap-44 items-start mt-32'>
                 <div>
                     <img src={burgerLogo} alt="logo" className='w-[500px]' />
                 </div>
-                <div>
-                    <h1 className='text-5xl font-[nova]'>Savor the Simplicity </h1>
+                <div className='text-white mt-52'>
+                    <h1 className='text-5xl font-[nova]  font-bold '>Delivering </h1>
+                    <h1 className='text-5xl font-[boldest]  font-bold '>happiness</h1>
+
                 </div>
             </div>
 

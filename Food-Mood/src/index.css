@@ -16,3 +16,16 @@
     font-family: gorg-regular;
     src: url(./fonts/BasisGrotesquePro-Regular.ttf);
 }
+
+@font-face {
+    font-family: head;
+    src: url(./fonts/head.ttf);
+}
+@font-face {
+    font-family: futura;
+    src: url(./fonts/Futura-Bold.ttf);
+}
+@font-face {
+    font-family: boldest;
+    src: url(./fonts/medium.otf);
+}

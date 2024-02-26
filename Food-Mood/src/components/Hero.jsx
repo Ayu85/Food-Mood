@@ -25,8 +25,8 @@ const Hero = () => {
                     <img src={burgerLogo} alt="logo" className='w-[500px] trans hidden lg:block' />
                 </motion.div>
                 <div className='text-white mt-52'>
-                    <h1 className='text-7xl font-[nova]  font-bold '>Delivering </h1>
-                    <h1 className='text-7xl font-[boldest]  font-bold '>happiness</h1>
+                    <motion.h1 initial={{ translateX: 800 }} animate={{ translateX: 0 }} transition={{ duration: 0.7, ease: 'easeIn', delay: 0.2 }} className='text-7xl font-[nova]  font-bold '>Delivering </motion.h1>
+                    <motion.h1 initial={{ translateX: 800 }} animate={{ translateX: 0 }} transition={{ duration: 0.7, ease: 'easeIn', delay: 0.4  }} className='text-7xl font-[boldest]  font-bold '>happiness</motion.h1>
                 </div>
             </div>
 

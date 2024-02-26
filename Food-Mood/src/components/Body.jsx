@@ -1,4 +1,5 @@
 import Hero from "./Hero"
+import Intro from "./Intro"
 import Navbar from "./Navbar"
 
 const Body = () => {
@@ -6,6 +7,7 @@ const Body = () => {
     <div>
         <Navbar/>
         <Hero/>
+        <Intro/>
     </div>
   )
 }

@@ -47,3 +47,25 @@
 .rotator {
     animation: rotation 4s linear infinite;
 }
+
+@keyframes burger {
+    0% {}
+
+    50% {
+        transform: translateY(20px);
+    }
+
+    75% {
+        transform: translate(20px);
+
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+.trans {
+    animation: burger 4s linear infinite;
+}

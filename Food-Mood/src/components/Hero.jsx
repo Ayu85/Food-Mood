@@ -16,7 +16,7 @@ const Hero = () => {
             <img src={tomato} alt="" className='left-[650px] top-[550px] absolute rotator' />
             <div className='absolute h-full w-full flex justify-center gap-32 items-start mt-32'>
                 <div>
-                    <img src={burgerLogo} alt="logo" className='w-[500px] trans' />
+                    <img src={burgerLogo} alt="logo" className='w-[500px] trans hidden lg:block' />
                 </div>
                 <div className='text-white mt-52'>
                     <h1 className='text-7xl font-[nova]  font-bold '>Delivering </h1>

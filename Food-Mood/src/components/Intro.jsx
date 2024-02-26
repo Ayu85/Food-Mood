@@ -12,7 +12,7 @@ const Intro = () => {
                 <img src={img4} alt="" className='' />
             </div>
             <div>
-                <h1>always fresh</h1>
+                <h1 className='font-[gorg-medium]'>always fresh</h1>
                 <h1>From Varanasi With  </h1>
                 <h1>Indian Love </h1>
             </div>

@@ -1,9 +1,11 @@
 import heroBg from '../assets/food_bg-1.jpg'
 import burgerLogo from '../assets/burger-1.png'
+import leaf1 from '../assets/leaf-1.png'
 const Hero = () => {
     return (
         <div className="h-[140vh] relative">
             <img src={heroBg} alt="" className='h-full absolute' />
+            <img src={leaf1} alt="" className='right-44 top-20 absolute' />
             <div className='absolute h-full w-full flex justify-center gap-44 items-start mt-32'>
                 <div>
                     <img src={burgerLogo} alt="logo" className='w-[500px]' />

@@ -1,9 +1,11 @@
+import Hero from "./Hero"
 import Navbar from "./Navbar"
 
 const Body = () => {
   return (
     <div>
         <Navbar/>
+        <Hero/>
     </div>
   )
 }

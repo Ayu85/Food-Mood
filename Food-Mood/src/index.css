@@ -21,11 +21,29 @@
     font-family: head;
     src: url(./fonts/head.ttf);
 }
+
 @font-face {
     font-family: futura;
     src: url(./fonts/Futura-Bold.ttf);
 }
+
 @font-face {
     font-family: boldest;
     src: url(./fonts/medium.otf);
+}
+
+@keyframes rotation {
+    0% {}
+
+    50% {
+        transform: rotate(20deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.rotator {
+    animation: rotation 2s linear infinite;
 }

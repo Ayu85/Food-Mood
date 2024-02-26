@@ -12,7 +12,7 @@ const Intro = () => {
                 <img src={img4} alt="" className='absolute' />
             </div>
             <div>
-
+                
             </div>
         </div>
     )

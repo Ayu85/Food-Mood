@@ -8,12 +8,7 @@ import { useState } from 'react';
 
 const Navbar = () => {
     const [isScrolled, setScrolled] = useState(false)
-    window.addEventListener('scroll', () => {
-        if (scrollY > 50)
-            setScrolled(true)
-        else
-            setScrolled(false)
-    })
+ 
     return (
         <div className={`flex ${isScrolled && "bg-[#ffffff74] backdrop-blur-md"} justify-between py-2 fixed top-0 z-[9999] w-full items-center bg-[#FFFFFF] px-10 font-[gorg-medium] font-medium  text-lg`}>
             <img src={logo} className='w-28' alt="logo" />

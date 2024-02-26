@@ -6,13 +6,13 @@ import { motion } from 'framer-motion'
 const Intro = () => {
     return (
         <div className=' flex items-center lg:justify-between justify-center gap-10 px-32 flex-wrap lg:flex-nowrap '>
-            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 100 }} transition={{ duration: 1.1, delay: 0.5 }} className='relative mt-20'>
-                <img src={img1} alt="" className='absolute ' />
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 100 }} transition={{ duration: 1.1, delay: 0.5 }} className='relative mt-20 hidden md:block lg:block'>
+                <img src={img1} alt="" className='absolute min-w-96 ' />
                 <img src={img2} alt="" className='absolute' />
                 <img src={img3} alt="" className='absolute' />
                 <img src={img4} alt="" className='' />
             </motion.div>
-            <div className='font-[#232323]'>
+            <div className='font-[#232323] mt-10 '>
                 <motion.h1 initial={{ translateX: 400 }} whileInView={{ translateX: 0 }} transition={{ duration: 0.2, ease: 'linear' }} className='font-[lateral] lg:text-3xl md:text-3xl text-2xl text-[#F7B035]'>always fresh</motion.h1>
                 <motion.h1 initial={{ translateX: 400 }} whileInView={{ translateX: 0 }} transition={{ duration: 0.2, ease: 'linear' }} className='lg:text-5xl md:text-5xl text-4xl pt-2 font-[gorg-medium] font-semibold '>From Varanasi With  </motion.h1>
                 <motion.h1 initial={{ translateX: 400 }} whileInView={{ translateX: 0 }} transition={{ duration: 0.2, ease: 'linear' }} className='lg:text-5xl md:text-5xl text-4xl font-[gorg-medium]  font-semibold '>Indian Love </motion.h1>

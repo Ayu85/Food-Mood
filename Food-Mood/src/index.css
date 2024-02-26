@@ -31,7 +31,10 @@
     font-family: boldest;
     src: url(./fonts/medium.otf);
 }
-
+@font-face {
+    font-family: lateral;
+    src: url(./fonts/Takota-BRa8.ttf);
+}
 @keyframes rotation {
     0% {}
 

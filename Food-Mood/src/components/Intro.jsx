@@ -11,10 +11,11 @@ const Intro = () => {
                 <img src={img3} alt="" className='absolute' />
                 <img src={img4} alt="" className='' />
             </div>
-            <div>
-                <h1 className='font-[gorg-medium]'>always fresh</h1>
-                <h1>From Varanasi With  </h1>
-                <h1>Indian Love </h1>
+            <div className='font-[#232323]'>
+                <h1 className='font-[lateral] text-3xl text-[#F7B035]'>always fresh</h1>
+                <h1 className='text-5xl font-[gorg-medium] font-semibold '>From Varanasi With  </h1>
+                <h1 className='text-5xl font-[gorg-medium]  font-semibold '>Indian Love </h1>
+                <p className='w-96 pt-3 text-md'>FoodMood is an Indian chain of fast food restaurants, which has an experience of opening more than 170 restaurants in 10 countries of the world. Thus the restaurants of the new generation had emerged in 2017.</p>
             </div>
         </div>
     )

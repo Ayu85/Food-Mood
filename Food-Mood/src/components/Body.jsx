@@ -4,7 +4,7 @@ import Navbar from "./Navbar"
 
 const Body = () => {
   return (
-    <div>
+    <div className="selection:bg-[#F7B035]">
         <Navbar/>
         <Hero/>
         <Intro/>

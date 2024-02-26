@@ -8,6 +8,8 @@ import tomato from '../assets/tomato_2.png'
 import points from '../assets/points_2.png'
 import points2 from '../assets/points.png'
 import { motion } from 'framer-motion'
+import { BsFillDoorOpenFill } from "react-icons/bs";
+
 const Hero = () => {
     return (
         <div className="h-[140vh] relative">
@@ -26,7 +28,8 @@ const Hero = () => {
                 </motion.div>
                 <div className='text-white mt-52'>
                     <motion.h1 initial={{ translateX: 800 }} animate={{ translateX: 0 }} transition={{ duration: 0.7, ease: 'easeIn', delay: 0.2 }} className='text-7xl font-[nova]  font-bold '>Delivering </motion.h1>
-                    <motion.h1 initial={{ translateX: 800 }} animate={{ translateX: 0 }} transition={{ duration: 0.7, ease: 'easeIn', delay: 0.4  }} className='text-7xl font-[boldest]  font-bold '>happiness</motion.h1>
+                    <motion.h1 initial={{ translateX: 800 }} animate={{ translateX: 0 }} transition={{ duration: 0.7, ease: 'easeIn', delay: 0.4 }} className='text-7xl font-[boldest]  font-bold '>happiness</motion.h1>
+                    <motion.h1 initial={{ translateX: 800 }} animate={{ translateX: 0 }} transition={{ duration: 0.7, ease: 'easeIn', delay: 0.4 }} className='text-4xl font-[boldest]  font-bold flex items-center gap-2'>to Doors<BsFillDoorOpenFill /> </motion.h1>
                 </div>
             </div>
 

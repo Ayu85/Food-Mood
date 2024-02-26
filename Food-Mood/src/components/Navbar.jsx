@@ -16,7 +16,7 @@ const Navbar = () => {
                 <li className='flex items-center gap-2'><MdCallSplit className='text-2xl' />Contact</li>
             </ul>
             <div className='flex gap-2  items-center'>
-                <TiShoppingCart />
+                <TiShoppingCart className='text-2xl' />
                 <button>Support</button>
             </div>
         </div>

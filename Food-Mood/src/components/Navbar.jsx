@@ -15,7 +15,7 @@ const Navbar = () => {
             setScrolled(false)
     })
     return (
-        <div className='flex justify-between py-2 fixed top-0 z-[9999] w-full items-center bg-[#FFFFFF] px-10 font-[gorg-medium] font-medium  text-lg'>
+        <div className={`flex ${isScrolled && "bg-[#ffffff74] backdrop-blur-md"} justify-between py-2 fixed top-0 z-[9999] w-full items-center bg-[#FFFFFF] px-10 font-[gorg-medium] font-medium  text-lg`}>
             <img src={logo} className='w-28' alt="logo" />
             <ul className='flex items-center  gap-3'>
                 <li className='flex items-center gap-2 cursor-pointer hover:bg-[#F4BD59] px-4 transition-all py-1 rounded-full'><BiSolidOffer className='text-2xl' />Offers</li>

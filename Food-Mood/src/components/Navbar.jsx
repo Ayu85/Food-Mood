@@ -7,8 +7,8 @@ import { MdCallSplit } from "react-icons/md";
 
 const Navbar = () => {
     return (
-        <div className='flex justify-between py-3 fixed top-0 z-[9999] w-full items-center bg-[#FFFFFF] px-10 font-[gorg-medium] font-medium  text-lg'>
-            <img src={logo} className='w-32' alt="logo" />
+        <div className='flex justify-between py-2 fixed top-0 z-[9999] w-full items-center bg-[#FFFFFF] px-10 font-[gorg-medium] font-medium  text-lg'>
+            <img src={logo} className='w-28' alt="logo" />
             <ul className='flex items-center  gap-5'>
                 <li className='flex items-center gap-2'><BiSolidOffer className='text-2xl' />Offers</li>
                 <li className='flex items-center gap-2'><BiHelpCircle className='text-2xl' />Help</li>

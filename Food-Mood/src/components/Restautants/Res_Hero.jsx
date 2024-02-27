@@ -20,9 +20,9 @@ const Res_Hero = () => {
             <img src={points} alt="" className='left-0 top-52 absolute ' />
             <img src={points2} alt="" className='left-[500px] top-52 absolute ' />
 
-            <motion.div initial={{ right: 0 }} animate={{ translateX: -1600 }}
-                transition={{ duration: 8, ease: 'linear', repeat: Infinity }} >
-                <img src={deliveryBoy} alt="" className=' absolute top-72 w-96 right-0' />
+            <motion.div  animate={{ translateX: -1900 }}
+                transition={{ duration: 10, ease: 'easeInOut', repeat: Infinity }} >
+                <img src={deliveryBoy} alt="" className=' absolute top-72 w-96 -right-96' />
             </motion.div>
         </div>
     )

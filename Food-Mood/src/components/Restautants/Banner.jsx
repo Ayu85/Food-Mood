@@ -6,15 +6,15 @@ import { rollLink } from '../../constants'
 import { choleBhatureLink } from '../../constants'
 const Banner = () => {
     return (
-        <div className='flex'>
-            banner
-            <img src={burgerLink} alt="" />
-            <img src={pizzaLink} alt="" />
-            <img src={chineseLink} alt="" />
-            <img src={biryaniLink} alt="" />
-            <img src={northIndianLink} alt="" />
-            <img src={choleBhatureLink} alt="" />
-            <img src={rollLink} alt="" />
+        <div className='flex overflow-y-hidden w-full'>
+            
+            <img src={burgerLink} alt="" className='w-60 h-60' />
+            <img src={pizzaLink} alt="" className='w-60 h-60' />
+            <img src={chineseLink} alt="" className='w-60 h-60' />
+            <img src={biryaniLink} alt="" className='w-60 h-60' />
+            <img src={northIndianLink} alt="" className='w-60 h-60' />
+            <img src={choleBhatureLink} alt="" className='w-60 h-60' />
+            <img src={rollLink} alt=""  className='w-60 h-60' />
         </div>
     )
 }

@@ -1,9 +1,11 @@
+import Navbar from "./Navbar"
+
 const Restaurants = () => {
-  return (
-    <div>
-        restaurantsl
-    </div>
-  )
+    return (
+        <div>
+            <Navbar />
+        </div>
+    )
 }
 
 export default Restaurants

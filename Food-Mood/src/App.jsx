@@ -1,11 +1,11 @@
 import Body from './components/Body'
-import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Navbar from './components/Navbar'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Restaurants from './components/Restaurants'
 const appRoute = createBrowserRouter([
   {
     path: '/',
-    element: <Body />
+    element: <Body />,
+
   },
   {
     path: '/restaurants',
@@ -15,8 +15,7 @@ const appRoute = createBrowserRouter([
 function App() {
   return (
     <RouterProvider router={appRoute} >
-      <Navbar />
-      <Outlet />
+     
     </RouterProvider>
   )
 }

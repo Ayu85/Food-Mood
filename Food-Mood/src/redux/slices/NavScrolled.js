@@ -6,8 +6,8 @@ const NavSlice = createSlice({
         value: false
     },
     reducers: {
-        toogleNav: (state) => {
-            state.value = !state.value
+        toogleNav: (state,action) => {
+            state.value = action.payload
         }
     }
 })

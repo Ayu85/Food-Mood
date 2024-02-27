@@ -6,7 +6,8 @@ import { rollLink } from '../../constants'
 import { choleBhatureLink } from '../../constants'
 const Banner = () => {
     return (
-        <div>
+        <div className='flex'>
+            banner
             <img src={burgerLink} alt="" />
             <img src={pizzaLink} alt="" />
             <img src={chineseLink} alt="" />

@@ -4,7 +4,7 @@ import Res_Hero from "./Res_Hero"
 
 const Restaurants = () => {
     return (
-        <div>
+        <div className="">
             <Navbar />
             <Res_Hero />
             <Banner />

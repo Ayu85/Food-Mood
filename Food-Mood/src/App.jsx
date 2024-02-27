@@ -1,6 +1,6 @@
 import Body from './components/Body'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Restaurants from './components/Restaurants'
+import Restaurants from './components/Restautants/Restaurants'
 const appRoute = createBrowserRouter([
   {
     path: '/',

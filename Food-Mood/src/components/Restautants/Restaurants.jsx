@@ -1,9 +1,10 @@
-import Navbar from "./Navbar"
+import Navbar from "../Navbar"
 
 const Restaurants = () => {
     return (
         <div>
             <Navbar />
+            
         </div>
     )
 }

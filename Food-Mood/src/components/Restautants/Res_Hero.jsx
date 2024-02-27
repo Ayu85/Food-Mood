@@ -1,7 +1,8 @@
+import heroBg from '../../assets/food_bg-1.jpg'
 const Res_Hero = () => {
     return (
-        <div>
-
+        <div className='relative'>
+            <img src={heroBg} alt="" className=' absolute' />
         </div>
     )
 }

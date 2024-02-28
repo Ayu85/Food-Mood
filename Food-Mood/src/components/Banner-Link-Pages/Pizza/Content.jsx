@@ -10,7 +10,7 @@ const Pizza = () => {
     return (
         <div className='relative flex items-center justify-center lg:h-[100vh] bg-black md:h-[60vh] h-[40vh] overflow-hidden'>
             <img src={heroBg} alt="" className='h-full w-full absolute' />
-            <img src={leaf1} alt="" className='right-44 top-20 absolute rotator' />
+            <img src={'https://e7.pngegg.com/pngimages/502/59/png-clipart-pizza-pizza.png'} alt="" className='right-44 top-20 absolute rotator' />
             <img src={mushroom} alt="" className='left-20 top-24 absolute rotator' />
             <img src={leaf2} alt="" className='right-20 top-[500px] absolute rotator hidden lg:block' />
             <img src={leaf3} alt="" className='left-10 top-96 absolute rotator hidden lg:block' />

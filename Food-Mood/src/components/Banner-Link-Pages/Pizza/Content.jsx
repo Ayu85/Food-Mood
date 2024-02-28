@@ -13,8 +13,9 @@ const Pizza = () => {
             <img src={p3} alt="" className='right-20 w-80 top-[400px] absolute  hidden lg:block' />
             <img src={points} alt="" className='left-0 top-52 absolute ' />
             <img src={points2} alt="" className='left-[500px] top-52 absolute  ' />
-            <div className='absolute font-[head] text-[#323437]  lg:text-9xl md:text-8xl text-5xl'>
-                <h1>PIZZA</h1>
+            <div className='absolute flex gap-5 flex-col items-center justify-center font-[head] text-[#323437]  '>
+                <h1 className='lg:text-8xl md:text-7xl text-5xl'>PIZZA</h1>
+                <p className='text-xl lg:text-2xl text-center'>Cheesilicious pizzas to make every day extraordinary.</p>
             </div>
         </div>
     )

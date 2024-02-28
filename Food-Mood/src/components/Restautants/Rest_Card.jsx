@@ -5,7 +5,7 @@ import { IoIosTime } from "react-icons/io";
 import { CiLocationOn } from "react-icons/ci";
 import { IMAGE_API } from "../../constants";
 
-const Rest_Card = ({ name, cloudinaryImageId, locality, avgRatingString, sla, areaName }) => {
+const Rest_Card = ({ name, cloudinaryImageId, locality, avgRatingString, sla }) => {
     const filteredRest = useSelector(store => store.restaurants.filteredRest)
     console.log(filteredRest);
     return (

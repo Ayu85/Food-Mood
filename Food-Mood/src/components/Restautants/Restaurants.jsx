@@ -2,6 +2,7 @@ import { useEffect } from "react"
 import Navbar from "../Navbar"
 import Banner from "./Banner"
 import Res_Hero from "./Res_Hero"
+import TopRest from "./TopRest"
 
 const Restaurants = () => {
     useEffect(() => {
@@ -17,6 +18,7 @@ const Restaurants = () => {
             <Navbar />
             <Res_Hero />
             <Banner />
+            <TopRest/>
         </div>
     )
 }

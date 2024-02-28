@@ -21,8 +21,8 @@ const Rest_Card = ({ name, cloudinaryImageId, locality, avgRatingString, sla, ar
                         <IoIosTime className="text-xl" />
                         {sla?.slaString}</h1>
                 </span>
-                <h1 className="flex items-center  text-md font-semibold text-[#414449]"><CiLocationOn />
-                    {locality},{areaName}</h1>
+                <h1 className="flex items-center  tracking-wide text-md font-semibold text-[#414449]"><CiLocationOn />
+                    {locality}</h1>
             </div>
         </div >
     )

@@ -1,5 +1,5 @@
 import Navbar from "../../Navbar"
-import Content from './Content'
+import Content from './PizzaHero'
 const Main = () => {
     return (
         <div>

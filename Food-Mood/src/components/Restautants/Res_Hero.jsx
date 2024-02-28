@@ -10,8 +10,8 @@ import points from '../../assets/points_2.png'
 import points2 from '../../assets/points.png'
 const Res_Hero = () => {
     return (
-        <div className='relative lg:h-[100vh] md:h-[60vh] h-[40vh]'>
-            <img src={heroBg} alt="" className='lg:h-[100vh] md:h-[60vh] h-[40vh] w-full absolute' />
+        <div className='relative lg:h-[100vh] bg-black md:h-[60vh] h-[40vh] overflow-hidden'>
+            <img src={heroBg} alt="" className='h-full w-full absolute' />
             <img src={leaf1} alt="" className='right-44 top-20 absolute rotator' />
             <img src={mushroom} alt="" className='left-20 top-24 absolute rotator' />
             <img src={leaf2} alt="" className='right-20 top-[500px] absolute rotator hidden lg:block' />

@@ -15,7 +15,7 @@ const Pizza = () => {
             <img src={points2} alt="" className='left-[500px] top-52 absolute  ' />
             <div className='absolute flex gap-5 flex-col items-center justify-center font-[head] text-[#323437]  '>
                 <h1 className='lg:text-8xl md:text-7xl text-5xl'>PIZZA</h1>
-                <p className='text-xl lg:text-2xl text-center'>Cheesilicious pizzas to make every day extraordinary.</p>
+                <p className='text-xl lg:text-2xl text-center text-[#535355] '>Cheesilicious pizzas to make every day extraordinary.</p>
             </div>
         </div>
     )

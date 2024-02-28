@@ -10,18 +10,18 @@ import points from '../../assets/points_2.png'
 import points2 from '../../assets/points.png'
 const Res_Hero = () => {
     return (
-        <div className='relative h-[100vh]'>
-            <img src={heroBg} alt="" className=' absolute' />
+        <div className='relative lg:h-[100vh] md:h-[60vh] h-[40vh]'>
+            <img src={heroBg} alt="" className='lg:h-[100vh] md:h-[60vh] h-[40vh] w-full absolute' />
             <img src={leaf1} alt="" className='right-44 top-20 absolute rotator' />
             <img src={mushroom} alt="" className='left-20 top-24 absolute rotator' />
-            <img src={leaf2} alt="" className='right-20 top-[500px] absolute rotator' />
-            <img src={leaf3} alt="" className='left-10 top-96 absolute rotator' />
-            <img src={tomato} alt="" className='right-[260px] top-[250px] absolute rotator' />
-            <img src={points} alt="" className='left-0 top-52 absolute ' />
-            <img src={points2} alt="" className='left-[500px] top-52 absolute ' />
+            <img src={leaf2} alt="" className='right-20 top-[500px] absolute rotator hidden lg:block' />
+            <img src={leaf3} alt="" className='left-10 top-96 absolute rotator hidden lg:block' />
+            <img src={tomato} alt="" className='right-[260px] top-[250px] absolute rotator hidden lg:block' />
+            <img src={points} alt="" className='left-0 top-52 absolute hidden lg:block' />
+            <img src={points2} alt="" className='left-[500px] top-52 absolute hidden lg:block ' />
             <motion.div  animate={{ translateX: -1900 }}
                 transition={{ duration: 10, ease: 'easeInOut', repeat: Infinity }} >
-                <img src={deliveryBoy} alt="" className=' absolute top-72 w-96 -right-96' />
+                <img src={deliveryBoy} alt="" className='absolute lg:top-72 lg:w-96 md:top-32 md:w-64 top-24 w-44 -right-96' />
             </motion.div>
         </div>
     )

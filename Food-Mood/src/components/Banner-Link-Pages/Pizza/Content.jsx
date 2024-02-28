@@ -17,7 +17,7 @@ const Pizza = () => {
             <img src={tomato} alt="" className='right-[260px] top-[250px] absolute rotator hidden lg:block' />
             <img src={points} alt="" className='left-0 top-52 absolute hidden lg:block' />
             <img src={points2} alt="" className='left-[500px] top-52 absolute hidden lg:block ' />
-            <div className='absolute font-[head] text-[#323437]  text-9xl'>
+            <div className='absolute font-[head] text-[#323437]  lg:text-9xl md:text-8xl text-5xl'>
                 <h1>PIZZA</h1>
             </div>
         </div>

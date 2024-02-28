@@ -1,7 +1,6 @@
 /* eslint react/prop-types: 0 */
 import { useSelector } from "react-redux"
 import { FcRating } from "react-icons/fc";
-import { IoIosTime } from "react-icons/io";
 import { CiLocationOn } from "react-icons/ci";
 import { IMAGE_API } from "../../constants";
 
@@ -18,7 +17,7 @@ const Rest_Card = ({ name, cloudinaryImageId, locality, avgRatingString, sla }) 
                         <FcRating className="text-xl" />
                         {avgRatingString}</h1>
                     <h1 className="flex items-center  text-md font-semibold text-[#414449]">
-                        <IoIosTime className="text-xl" />
+                        
                         {sla?.slaString}</h1>
                 </span>
                 <h1 className="flex items-center  tracking-wide text-md font-semibold text-[#414449]"><CiLocationOn />

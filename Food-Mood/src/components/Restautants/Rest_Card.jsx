@@ -1,12 +1,9 @@
 /* eslint react/prop-types: 0 */
-import { useSelector } from "react-redux"
 import { FcRating } from "react-icons/fc";
 import { CiLocationOn } from "react-icons/ci";
 import { IMAGE_API } from "../../constants";
 
 const Rest_Card = ({ name, cloudinaryImageId, locality, avgRatingString, sla }) => {
-    const filteredRest = useSelector(store => store.restaurants.filteredRest)
-    console.log(filteredRest);
     return (
         < div className="flex cursor-pointer hover:scale-95 transition-all  font-[gorg-regular] flex-col w-72 h-64 px-2 py-2  text-black" >
             <img src={IMAGE_API + cloudinaryImageId} className="w-72 h-44 rounded-2xl" alt="" />

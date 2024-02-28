@@ -1,10 +1,12 @@
 import Navbar from "../../Navbar"
-import Content from './PizzaHero'
+import PizzaContent from "./PizzaContent"
+import PizzaHero from './PizzaHero'
 const Main = () => {
     return (
         <div>
             <Navbar />
-            <Content/>
+            <PizzaHero/>
+            <PizzaContent />
         </div>
     )
 }

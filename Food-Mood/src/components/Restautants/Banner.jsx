@@ -13,7 +13,6 @@ const Banner = () => {
         <div className='flex flex-col mt-10  justify-center items-center gap-3   '>
             <div>
                 <h1 className='text-2xl font-semibold font-[gorg-medium] border-b border-b-yellow-500'>Choose from your favourites</h1>
-
             </div>
             <div className='flex justify-center items-center'>
                 {/* <div ><GrPrevious

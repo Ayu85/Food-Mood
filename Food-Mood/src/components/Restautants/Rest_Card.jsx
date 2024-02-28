@@ -9,7 +9,7 @@ const Rest_Card = ({ name, cloudinaryImageId, locality, avgRatingString, sla }) 
     const filteredRest = useSelector(store => store.restaurants.filteredRest)
     console.log(filteredRest);
     return (
-        < div className="flex font-[gorg-regular] flex-col w-72 h-64 px-2 py-2  text-black" >
+        < div className="flex cursor-pointer hover:scale-95 transition-all  font-[gorg-regular] flex-col w-72 h-64 px-2 py-2  text-black" >
             <img src={IMAGE_API + cloudinaryImageId} className="w-72 h-44 rounded-2xl" alt="" />
             <div className="pl-2">
                 <h1 className="text-xl tracking-wide  font-semibold text-[#414449] line-clamp-1">{name}</h1>

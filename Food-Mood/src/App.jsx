@@ -3,7 +3,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Restaurants from './components/Restautants/Restaurants'
 import { Provider } from 'react-redux'
 import store from './redux/store'
-import Pizza from './components/Banner-Link-Pages/Pizza/Pizza'
+import Main from './components/Banner-Link-Pages/Pizza/Main'
 const appRoute = createBrowserRouter([
   {
     path: '/',
@@ -15,8 +15,8 @@ const appRoute = createBrowserRouter([
     element: <Restaurants />
   },
   {
-    path: '/pizza',
-    element: <Pizza />
+    path: '/restaurants/pizza',
+    element: <Main />
   }
 ])
 function App() {

@@ -4,6 +4,7 @@ import points2 from '../../../assets/points.png'
 import p1 from '../../../assets/pizza/p1.png'
 import p2 from '../../../assets/pizza/p2.png'
 import p3 from '../../../assets/pizza/p3.png'
+import { easeIn, motion } from 'framer-motion'
 const Pizza = () => {
     return (
         <div className='relative flex items-center justify-center lg:h-[100vh] bg-black md:h-[60vh] h-[40vh] overflow-hidden'>
@@ -14,8 +15,15 @@ const Pizza = () => {
             <img src={points} alt="" className='left-0 top-52 absolute ' />
             <img src={points2} alt="" className='left-[500px] top-52 absolute  ' />
             <div className='absolute flex gap-5 flex-col items-center justify-center font-[head] text-[#323437]  '>
-                <h1 className='lg:text-8xl md:text-7xl text-5xl'>PIZZA</h1>
-                <p className='text-xl lg:text-2xl text-center text-[#535355] '>Cheesilicious pizzas to make every day extraordinary.</p>
+                <motion.h1 initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    transition={{ duration: 0.8, ease: easeIn }}
+                    className='lg:text-8xl md:text-7xl text-5xl'>PIZZA</motion.h1>
+                <motion.p
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    transition={{ duration: 0.8, ease: easeIn, delay: 0.5 }}
+                    className='text-xl lg:text-2xl text-center text-[#535355] '>Cheesilicious pizzas to make every day extraordinary.</motion.p>
             </div>
         </div>
     )

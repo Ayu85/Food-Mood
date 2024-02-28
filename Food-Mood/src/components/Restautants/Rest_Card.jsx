@@ -12,7 +12,7 @@ const Rest_Card = ({ name, cloudinaryImageId, locality, avgRatingString, sla }) 
         < div className="flex cursor-pointer hover:scale-95 transition-all  font-[gorg-regular] flex-col w-72 h-64 px-2 py-2  text-black" >
             <img src={IMAGE_API + cloudinaryImageId} className="w-72 h-44 rounded-2xl" alt="" />
             <div className="pl-2">
-                <h1 className="text-xl tracking-wide  font-semibold text-[#414449] line-clamp-1">{name}</h1>
+                <h1 className="text-lg pt-1 tracking-wide  font-semibold text-[#414449] line-clamp-1">{name}</h1>
                 <span className="flex gap-2">
                     <h1 className="flex items-center gap-1 text-md font-semibold text-[#414449]">
                         <FcRating className="text-xl" />

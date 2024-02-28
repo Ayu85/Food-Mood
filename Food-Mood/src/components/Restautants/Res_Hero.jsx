@@ -21,7 +21,7 @@ const Res_Hero = () => {
             <img src={points2} alt="" className='left-[500px] top-52 absolute hidden lg:block ' />
             <motion.div  animate={{ translateX: -1900 }}
                 transition={{ duration: 10, ease: 'easeInOut', repeat: Infinity }} >
-                <img src={deliveryBoy} alt="" className='absolute lg:top-72 lg:w-96 md:top-32 md:w-64 top-24 w-44 -right-96' />
+                <img src={deliveryBoy} alt="" className='absolute lg:top-72 lg:w-96 md:top-72 md:w-72 top-28 w-44 -right-96' />
             </motion.div>
         </div>
     )

@@ -1,4 +1,6 @@
-import Navbar from '../../components/Navbar'
+import heroBg from '../../../assets/food_bg-1.jpg'
+
+import Navbar from '../../Navbar'
 const Pizza = () => {
     return (
         <div>

@@ -1,6 +1,4 @@
 import heroBg from '../../../assets/food_bg-1.jpg'
-import leaf3 from '../../../assets/leaf_3.png'
-import tomato from '../../../assets/tomato_2.png'
 import points from '../../../assets/points_2.png'
 import points2 from '../../../assets/points.png'
 import p1 from '../../../assets/pizza/p1.png'

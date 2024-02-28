@@ -4,7 +4,7 @@ import Shimmer from '../../ShimmerUI/Shimmer'
 const PizzaContent = () => {
     const pizzaData = useSelector(store => store.pizza_data.filteredData)
 
-    return pizzaData.length === 0 ? <Shimmer /> : (
+    return pizzaData.length === 0 ? <Shimmer />: (
         <div className='flex flex-col gap-3 mt-5 justify-center items-center'>
             <div>
                 <h1 className='text-2xl font-semibold font-[gorg-medium] border-b border-b-yellow-500'>Top Choices for You</h1>

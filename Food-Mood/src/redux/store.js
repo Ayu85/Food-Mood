@@ -1,10 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
 import NavSlice from './slices/NavScrolled';
-import Restaurants from '../components/Restautants/Restaurants';
+import RestaurantData from './slices/RestaurantData';
+
 const store = configureStore({
     reducer: {
         nav_slice: NavSlice,
-        restaurants: Restaurants
+        restaurants: RestaurantData
     }
 })
 export default store;

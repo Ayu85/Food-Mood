@@ -10,7 +10,6 @@ const useAPI = () => {
         const getRestaurants = async () => {
             const rawData = await fetch(REST_API);
             const json = await rawData.json();
-            console.log(json);
             dispatch(addRestaurants(json.data.cards))
         }
         getRestaurants()

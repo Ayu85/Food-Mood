@@ -3,6 +3,7 @@ import Banner from "./Banner"
 import Res_Hero from "./Res_Hero"
 
 const Restaurants = () => {
+    
     return (
         <div className="">
             <Navbar />

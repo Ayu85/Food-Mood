@@ -6,9 +6,10 @@ import { FaRegUserCircle } from "react-icons/fa";
 import { MdCallSplit } from "react-icons/md";
 import { useDispatch, useSelector } from 'react-redux';
 import { toogleNav } from '../redux/slices/NavScrolled';
-
+import { useNavigate } from 'react-router-dom'
 const Navbar = () => {
     const dispatch = useDispatch()
+    const navigate = useNavigate()
     window.addEventListener('scroll', () => {
         if (scrollY > 150)
             dispatch(toogleNav(true))
@@ -19,7 +20,7 @@ const Navbar = () => {
     const isScrolled = useSelector(store => store.nav_slice.value)
     return (
         <div className={`flex ${isScrolled && "bg-[#ffffff4e] backdrop-blur-md"}  ${isScrolled && "bg-[#ffffff9f] backdrop-blur-md"}  transition-all duration-75 justify-between py-2 fixed top-0 z-[9999] w-full items-center bg-[#ffffff00] px-10 font-[gorg-medium] font-medium  text-lg`}>
-            <img src={logo} className='w-28' alt="logo" />
+            <img src={logo} onClick={() => { navigate('/') }} className='w-28' alt="logo" />
             <ul className=' items-center  gap-3 hidden lg:flex'>
                 <li className='flex items-center gap-2 cursor-pointer hover:bg-[#F4BD59] px-4 transition-all py-1 rounded-full'><BiSolidOffer className='text-2xl' />Offers</li>
                 <li className='flex items-center gap-2 cursor-pointer  hover:bg-[#F4BD59] px-4 transition-all py-1 rounded-full'><BiHelpCircle className='text-2xl' />Help</li>

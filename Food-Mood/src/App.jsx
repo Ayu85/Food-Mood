@@ -4,6 +4,7 @@ import Restaurants from './components/Restautants/Restaurants'
 import { Provider } from 'react-redux'
 import store from './redux/store'
 import Main from './components/Banner-Link-Pages/Pizza/Main'
+import ChineseMain from './components/Banner-Link-Pages/Chinese/ChineseMain'
 const appRoute = createBrowserRouter([
   {
     path: '/',
@@ -17,6 +18,10 @@ const appRoute = createBrowserRouter([
   {
     path: '/restaurants/pizza',
     element: <Main />
+  },
+  {
+    path: '/restaurants/chinese',
+    element: <ChineseMain />
   }
 ])
 function App() {

@@ -1,5 +1,4 @@
 import { useEffect } from "react"
-import { MENU_API } from "../constants"
 
 const useMenuAPI = (id) => {
     useEffect(() => {

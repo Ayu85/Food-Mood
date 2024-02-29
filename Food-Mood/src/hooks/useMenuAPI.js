@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { addFullMenu } from "../redux/slices/Menu"
+import { addFilteredMenu, addFullMenu } from "../redux/slices/Menu"
 
 const useMenuAPI = (id) => {
     const dispatch = useDispatch()
@@ -18,6 +18,10 @@ const useMenuAPI = (id) => {
             return men?.card?.card?.contains("itemCards")
         })
     }
+    setTimeout(() => {
+        const d = getFilteredMenu();
+        dispatch(addFilteredMenu(d))
+    }, 1000)
 }
 
 export default useMenuAPI

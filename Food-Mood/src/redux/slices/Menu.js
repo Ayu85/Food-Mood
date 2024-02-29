@@ -11,7 +11,7 @@ const Menu = createSlice({
             state.value = action.payload
         },
         addFilteredMenu: (state, action) => {
-            state.value = action.payload;
+            state.filteredMenu = action.payload;
         }
     }
 })

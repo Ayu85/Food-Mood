@@ -7,7 +7,7 @@ const TopRest = () => {
 
     return (
         filteredRest.length === 0 ? <Shimmer /> :
-            <div className="flex flex-wrap gap-6 justify-center items-center px-20 mt-10">
+            <div className="flex flex-wrap gap-8 justify-center items-center px-20 mt-10">
                 {filteredRest[0]?.card?.card?.gridElements?.infoWithStyle?.restaurants?.map((res, key) => {
                     return <Rest_Card {...res?.info} key={key} />
                 })}

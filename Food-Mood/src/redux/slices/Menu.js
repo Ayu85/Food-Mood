@@ -4,7 +4,8 @@ const Menu = createSlice({
     name: "menu",
     initialState: {
         value: [],
-        filteredMenu: []
+        filteredMenu: [],
+        restDetail: null
     },
     reducers: {
         addFullMenu: (state, action) => {
@@ -12,8 +13,11 @@ const Menu = createSlice({
         },
         addFilteredMenu: (state, action) => {
             state.filteredMenu = action.payload;
+        },
+        addRestDetails:(state,action)=>{
+            state.restDetail=action.payload
         }
     }
 })
-export const { addFilteredMenu, addFullMenu } = Menu.actions;
+export const { addFilteredMenu, addFullMenu,addRestDetails } = Menu.actions;
 export default Menu.reducer

@@ -15,11 +15,12 @@ const useMenuAPI = (id) => {
     }, [])
     const getFilteredMenu = () => {
         return fullMenu?.filter((men) => {
-            return men?.card?.card?.contains("itemCards")
+            return 'itemCards' in men.card.card
         })
     }
     setTimeout(() => {
         const d = getFilteredMenu();
+        console.log(d);
         dispatch(addFilteredMenu(d))
     }, 1000)
 }

@@ -10,7 +10,7 @@ const ChineseFood = createSlice({
             state.value = action.payload
         },
         addFilteredChinese: (state, action) => {
-            state.value = action.payload
+            state.filteredChinese = action.payload
         }
     }
 })

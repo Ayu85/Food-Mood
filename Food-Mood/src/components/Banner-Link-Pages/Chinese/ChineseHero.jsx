@@ -19,12 +19,12 @@ const ChineseHero = () => {
                     <motion.h1 initial={{ scale: 0 }}
                         animate={{ scale: 1 }}
                         transition={{ duration: 0.8, ease: easeIn }}
-                        className='lg:text-8xl md:text-7xl text-5xl'>PIZZA</motion.h1>
+                        className='lg:text-8xl md:text-7xl text-5xl'>CHINESE</motion.h1>
                     <motion.p
                         initial={{ scale: 0 }}
                         animate={{ scale: 1 }}
                         transition={{ duration: 0.8, ease: easeIn, delay: 0.5 }}
-                        className='text-xl lg:text-2xl text-center text-[#535355] '>Cheesilicious pizzas to make every day extraordinary.</motion.p>
+                        className='text-xl lg:text-2xl text-center text-[#535355] '>Transport your taste buds to the heart of Chinese cuisine with these scrumptious dishes.</motion.p>
                 </div>
             </div>
         </div>

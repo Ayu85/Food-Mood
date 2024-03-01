@@ -6,7 +6,6 @@ import { IoTimerSharp } from "react-icons/io5";
 
 const Rest_Details = () => {
     const restaurantDetails = useSelector(store => store.menu.restDetail)
-    console.log(restaurantDetails);
     return (
         <div className="flex justify-between gap-96  px-5 py-5 mt-32 items-start border border-slate-400 rounded-l">
             <div className='flex flex-col text-sm font-[gorg-medium]  '>

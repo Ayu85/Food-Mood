@@ -14,7 +14,11 @@ const Rest_Details = () => {
                     <h1 className='border-t border-slate-500'>{restaurantDetails?.totalRatingsString}</h1>
                 </span>
             </div>
-            <div></div>
+            <div className='flex flex-col text-lg font-[gorg-medium] '>
+                <span className='text-2xl font-bold'>{restaurantDetails?.name}</span>
+                <span className='text-slate-500'>{restaurantDetails?.cuisines?.join(",")}</span>
+                <span className='text-slate-500'>{restaurantDetails?.areaName}</span>
+            </div>
         </div>
     )
 }

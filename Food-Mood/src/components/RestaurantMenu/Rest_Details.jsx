@@ -8,7 +8,7 @@ const Rest_Details = () => {
     console.log(restaurantDetails);
     return (
         <div className="flex justify-between gap-96  px-5 py-5 mt-32 items-start border border-slate-400 rounded-l">
-            <div className='flex flex-col text-sm font-[gorg-medium] '>
+            <div className='flex flex-col text-sm font-[gorg-medium]  '>
                 <span className='text-xl font-bold'>{restaurantDetails?.name}</span>
                 <span className='text-slate-500'>{restaurantDetails?.cuisines?.join(",")}</span>
                 <span className='text-slate-500'>{restaurantDetails?.areaName},{restaurantDetails?.sla?.lastMileTravelString}</span>

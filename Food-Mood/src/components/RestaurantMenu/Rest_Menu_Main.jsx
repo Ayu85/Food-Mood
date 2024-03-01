@@ -11,7 +11,7 @@ const Menu = () => {
     return (
         <div>
             <Navbar />
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center items-center w-[80%] ml-[50%] -translate-x-[50%]">
                 <Rest_Details />
                 <OffersBanner/>
                 <Full_Menu />

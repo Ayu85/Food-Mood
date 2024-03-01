@@ -16,7 +16,7 @@ const Rest_Details = () => {
         }, 4000);
     }, [])
     return !showData ? <HeaderShimmer /> : (
-        <div className="flex justify-between lg:gap-96 md:gap-44 gap-5  px-5 py-5 mt-32 items-start border border-slate-400 rounded-l">
+        <div className="flex justify-between lg:gap-96 md:gap-44 gap-10  px-5 py-5 mt-32 items-start border border-slate-400 rounded-l">
             <div className='flex flex-col text-sm font-[gorg-medium]  '>
                 <span className='text-xl font-bold'>{restaurantDetails?.name}</span>
                 <span className='text-slate-500'>{restaurantDetails?.cuisines?.join(",")}</span>
@@ -34,7 +34,7 @@ const Rest_Details = () => {
                     <h1 className='border-t border-slate-500'>{restaurantDetails?.totalRatingsString}</h1>
                 </span>
             </div>
-            <div className='flex flex-col gap-3 items-center justify-center'>
+            <div className='  hidden md:block lg:block'>
                 <img src={IMAGE_API + restaurantDetails?.cloudinaryImageId} className='rounded-xl w-52 aspect-square' alt="" />
 
             </div>

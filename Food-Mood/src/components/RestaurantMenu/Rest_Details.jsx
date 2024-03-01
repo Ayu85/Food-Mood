@@ -3,10 +3,18 @@ import { IMAGE_API } from '../../constants'
 import { FaStar } from "react-icons/fa6";
 import { PiPersonSimpleBikeLight } from "react-icons/pi";
 import { IoTimerSharp } from "react-icons/io5";
+import { useEffect, useState } from 'react';
+import HeaderShimmer from '../ShimmerUI/MenuShimmer/HeaderShimmer';
 
 const Rest_Details = () => {
     const restaurantDetails = useSelector(store => store.menu.restDetail)
-    return (
+    const [showData, setShowData] = useState(false)
+    useEffect(() => {
+        setTimeout(() => {
+            setShowData(true)
+        }, 5000);
+    }, [])
+    return !showData ? <HeaderShimmer /> : (
         <div className="flex justify-between gap-96  px-5 py-5 mt-32 items-start border border-slate-400 rounded-l">
             <div className='flex flex-col text-sm font-[gorg-medium]  '>
                 <span className='text-xl font-bold'>{restaurantDetails?.name}</span>

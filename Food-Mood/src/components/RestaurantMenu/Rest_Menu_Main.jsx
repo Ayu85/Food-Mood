@@ -3,6 +3,7 @@ import useMenuAPI from "../../hooks/useMenuAPI"
 import Navbar from "../Navbar"
 import Rest_Details from "./Rest_Details"
 import Full_Menu from "./Full_Menu"
+import OffersBanner from "./OffersBanner"
 
 const Menu = () => {
     const id = useParams()
@@ -12,6 +13,7 @@ const Menu = () => {
             <Navbar />
             <div className="flex flex-col justify-center items-center">
                 <Rest_Details />
+                <OffersBanner/>
                 <Full_Menu />
             </div>
         </div>

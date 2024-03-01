@@ -5,7 +5,7 @@ const OffersBanner = () => {
     const restaurantDetails = useSelector(store => store.menu.restDetail)
 
     return (
-        <div className="flex mt-6 gap-8  ">
+        <div className="flex mt-6 lg:gap-8 md:gap-8 gap-3  ">
             <div>
                 <h1 className="w-52 flex items-center 
                 text-md font-semibold border border-slate-300

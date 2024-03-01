@@ -17,7 +17,7 @@ const Rest_Card = ({ name, cloudinaryImageId, locality, avgRatingString, sla }) 
                         
                         {sla?.slaString}</h1>
                 </span>
-                <h1 className="flex items-center  tracking-wide text-md font-semibold text-[#414449]"><CiLocationOn />
+                <h1 className="flex items-center  tracking-wide text-sm font-semibold text-[#414449]"><CiLocationOn />
                     {locality}</h1>
             </div>
         </div >

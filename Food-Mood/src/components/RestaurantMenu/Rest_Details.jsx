@@ -7,8 +7,8 @@ const Rest_Details = () => {
     console.log(restaurantDetails);
     return (
         <div className="">
-            <div>
-                <img src={IMAGE_API + restaurantDetails?.cloudinaryImageId} className='w-96' alt="" />
+            <div className='flex flex-col gap-3 items-center justify-center'>
+                <img src={IMAGE_API + restaurantDetails?.cloudinaryImageId} className='w-96 aspect-square' alt="" />
                 <span className='flex flex-col  text-lg font-semibold justify-center items-center w-32 py-2 border border-slate-500'>
                     <h1 className='flex items-center gap-1 text-[#008000] '><span><FaStar /></span><span>{restaurantDetails?.avgRatingString}</span></h1>
                     <h1 className='border-t border-slate-500'>{restaurantDetails?.totalRatingsString}</h1>

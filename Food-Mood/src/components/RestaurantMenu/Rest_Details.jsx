@@ -2,6 +2,7 @@ import { useSelector } from 'react-redux'
 import { IMAGE_API } from '../../constants'
 import { FaStar } from "react-icons/fa6";
 import { PiPersonSimpleBikeLight } from "react-icons/pi";
+import { IoTimerSharp } from "react-icons/io5";
 
 const Rest_Details = () => {
     const restaurantDetails = useSelector(store => store.menu.restDetail)
@@ -12,8 +13,13 @@ const Rest_Details = () => {
                 <span className='text-xl font-bold'>{restaurantDetails?.name}</span>
                 <span className='text-slate-500'>{restaurantDetails?.cuisines?.join(",")}</span>
                 <span className='text-slate-500'>{restaurantDetails?.areaName},{restaurantDetails?.sla?.lastMileTravelString}</span>
-                <span className='text-slate-500 flex items-center gap-1 pt-2'><PiPersonSimpleBikeLight  className='text-xl text-slate-600'/>
+                <span className='text-slate-500 flex items-center gap-1 pt-2'><PiPersonSimpleBikeLight className='text-xl text-slate-600' />
                     {restaurantDetails?.feeDetails?.message}</span>
+                <span className=' text-lg flex gap-3 mt-4 text-[#3E4152] font-black'>
+                    <span className='flex items-center gap-1'><IoTimerSharp />
+                        {restaurantDetails?.sla?.minDeliveryTime}-{restaurantDetails?.sla?.maxDeliveryTime} MINS
+                    </span>
+                    {restaurantDetails?.costForTwoMessage} </span>
             </div>
             <div className='flex flex-col gap-3 items-center justify-center'>
                 <img src={IMAGE_API + restaurantDetails?.cloudinaryImageId} className='rounded-xl w-52 aspect-square' alt="" />

@@ -37,7 +37,6 @@ const Rest_Details = () => {
             <div className='  hidden md:block lg:block'>
                 <img src={IMAGE_API + restaurantDetails?.cloudinaryImageId} className='rounded-xl w-52 aspect-square' alt="" />
             </div>
-
         </div>
     )
 }

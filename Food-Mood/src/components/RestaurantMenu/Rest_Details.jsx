@@ -19,14 +19,16 @@ const Rest_Details = () => {
                     <span className='flex items-center gap-1'><IoTimerSharp />
                         {restaurantDetails?.sla?.minDeliveryTime}-{restaurantDetails?.sla?.maxDeliveryTime} MINS
                     </span>
-                    {restaurantDetails?.costForTwoMessage} </span>
-            </div>
-            <div className='flex flex-col gap-3 items-center justify-center'>
-                <img src={IMAGE_API + restaurantDetails?.cloudinaryImageId} className='rounded-xl w-52 aspect-square' alt="" />
-                <span className='flex rounded-xl flex-col  text-sm font-semibold justify-center items-center w-24 py-2 border border-slate-500'>
+                    {restaurantDetails?.costForTwoMessage}
+                </span>
+                <span className='flex mt-5  rounded-xl flex-col  text-sm font-semibold justify-center items-center w-24 py-2 border border-slate-500'>
                     <h1 className='flex items-center gap-1 text-[#008000] '><span><FaStar /></span><span>{restaurantDetails?.avgRatingString}</span></h1>
                     <h1 className='border-t border-slate-500'>{restaurantDetails?.totalRatingsString}</h1>
                 </span>
+            </div>
+            <div className='flex flex-col gap-3 items-center justify-center'>
+                <img src={IMAGE_API + restaurantDetails?.cloudinaryImageId} className='rounded-xl w-52 aspect-square' alt="" />
+
             </div>
 
         </div>

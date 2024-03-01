@@ -21,7 +21,6 @@ const useMenuAPI = (id) => {
     }
     setTimeout(() => {
         const d = getFilteredMenu();
-        console.log(d);
         dispatch(addFilteredMenu(d))
     }, 1000)
 }

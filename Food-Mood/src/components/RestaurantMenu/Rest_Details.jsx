@@ -6,7 +6,7 @@ const Rest_Details = () => {
     const restaurantDetails = useSelector(store => store.menu.restDetail)
     console.log(restaurantDetails);
     return (
-        <div className="flex justify-between w-[70%] ">
+        <div className="flex justify-between w-[70%] mt-44">
             <div className='flex flex-col gap-3 items-center justify-center'>
                 <img src={IMAGE_API + restaurantDetails?.cloudinaryImageId} className='rounded-2xl w-96 aspect-square' alt="" />
                 <span className='flex rounded-2xl flex-col  text-lg font-semibold justify-center items-center w-32 py-2 border border-slate-500'>

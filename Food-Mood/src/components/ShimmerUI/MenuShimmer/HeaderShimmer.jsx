@@ -1,7 +1,7 @@
 const HeaderShimmer = () => {
     return (
         <div>
-            <div className="flex justify-between gap-96  px-5 py-5 mt-32 items-start border border-slate-400 rounded-l bg-slate-300 animate-[pulse_0.5s_infinite]">
+            <div className="flex justify-between  lg:gap-96 md:gap-44 gap-5   px-5 py-5 mt-32 items-start border border-slate-400 rounded-l bg-slate-300 animate-[pulse_0.5s_infinite]">
                 <div className='flex flex-col text-sm font-[gorg-medium] w-72 h-52 gap-1  '>
                     <span className='text-xl font-bold h-3 w-44 bg-slate-400 border border-slate-400'></span>
                     <span className='text-slate-500  h-2 w-32 bg-slate-400 border border-slate-400'></span>

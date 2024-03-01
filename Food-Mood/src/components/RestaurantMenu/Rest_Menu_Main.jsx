@@ -9,9 +9,11 @@ const Menu = () => {
     useMenuAPI(id?.id)
     return (
         <div>
-            <Navbar/>
-            <Rest_Details/>
-            <Full_Menu/>
+            <Navbar />
+            <div className="flex flex-col justify-center items-center">
+                <Rest_Details />
+                <Full_Menu />
+            </div>
         </div>
     )
 }

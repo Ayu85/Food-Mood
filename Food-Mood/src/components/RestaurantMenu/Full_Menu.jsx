@@ -20,10 +20,10 @@ const Menu_Card = ({ imageId, name, description, isVeg, price }) => {
       <img src={isVeg ? veg : nonveg} alt="" className="w-7" />
       <h1 className="text-md font-bold">{name}</h1>
       <h1>Rs.{price / 100}</h1>
-      <h1>{description?.substring(0,80)}</h1>
+      <h1 className="line-clamp-2 lg:line-clamp-none md:line-clamp-none">{description?.substring(0,80)}</h1>
     </div>
     <div>
-      <img src={IMAGE_API + imageId} alt="" className="w-20" />
+      <img src={IMAGE_API + imageId} alt="" className="w-28 h-24 hidden md:block lg:block" />
     </div>
   </div>
 

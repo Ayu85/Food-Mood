@@ -95,7 +95,7 @@ const Menu_Card = ({ imageId, name, description, isVeg, price }) => {
     </div>
     <div className="flex flex-col items-center gap-1 text-green-700">
       <img src={IMAGE_API + imageId} alt="" className="w-28 h-24 hidden md:block lg:block" />
-      <button className="border border-slate-300 font-semibold w-28 py-1">Add+</button>
+      <button className="border border-slate-300 font-semibold w-28 py-1 active:bg-black active:scale-125 transition-all">Add+</button>
     </div>
   </div>
 

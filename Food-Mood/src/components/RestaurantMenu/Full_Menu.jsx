@@ -13,7 +13,7 @@ const Full_Menu = () => {
   }, 4000);
   console.log(menuItems);
   return !showData ? <Full_Menu_Shimmer /> : (
-    <div className="flex flex-col">
+    <div className="flex flex-col border px-2 border-slate-300 mt-5">
       <h1 className="text-lg font-bold mt-5">{menuItems[0]?.card?.card?.title}</h1>
       <div>
         {menuItems[0]?.card?.card?.itemCards?.map((items) => {

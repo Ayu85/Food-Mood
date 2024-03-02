@@ -1,10 +1,17 @@
 import { useSelector } from "react-redux"
 import { BiSolidOffer } from "react-icons/bi";
-
+import BannerShimmer from "../ShimmerUI/MenuShimmer/BannerShimmer";
+import { useEffect, useState } from "react";
 const OffersBanner = () => {
     const restaurantDetails = useSelector(store => store.menu.restDetail)
-
-    return (
+    const [showData, setShowData] = useState(false)
+    // console.log(restaurantDetails);
+    useEffect(() => {
+        setTimeout(() => {
+            setShowData(true)
+        }, 4000);
+    }, [])
+    return !showData ? < BannerShimmer /> : (
         <div className="flex mt-6 lg:gap-8 md:gap-8 gap-3  ">
             <div>
                 <h1 className="w-52 h-16 flex items-center 

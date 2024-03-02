@@ -14,7 +14,7 @@ const OffersBanner = () => {
                     {restaurantDetails?.aggregatedDiscountInfoV2?.descriptionList[0]?.meta}</h1>
             </div>
             <div>
-                <h1 className="w-60  h-16  flex items-center  text-md font-semibold border border-slate-300 
+                <h1 className="w-60  h-16   flex items-center  text-md font-semibold border border-slate-300 
                 px-2 py-2 text-center">  <BiSolidOffer className="text-5xl text-[#865649]" />
                     {restaurantDetails?.aggregatedDiscountInfoV2?.descriptionList[1]?.meta}</h1>
             </div>

@@ -16,7 +16,7 @@ const Rest_Details = () => {
         }, 4000);
     }, [])
     return !showData ? <HeaderShimmer /> : (
-        <div className="flex  min-w-[450px] justify-between lg:gap-96 md:gap-44 gap-10  px-5 py-5 mt-44 items-start border border-slate-400 rounded-l">
+        <div className="flex  min-w-[450px] justify-between lg:gap-96 md:gap-44 gap-10  px-5 py-5 mt-44 items-start border border-slate-300 rounded-l">
             <div className='flex flex-col text-sm font-[gorg-medium]  '>
                 <span className='text-xl font-bold'>{restaurantDetails?.name}</span>
                 <span className='text-slate-500'>{restaurantDetails?.cuisines?.join(",")}</span>

@@ -9,7 +9,7 @@ import HeaderShimmer from '../ShimmerUI/MenuShimmer/HeaderShimmer';
 const Rest_Details = () => {
     const restaurantDetails = useSelector(store => store.menu.restDetail)
     const [showData, setShowData] = useState(false)
-    console.log(restaurantDetails);
+    // console.log(restaurantDetails);
     useEffect(() => {
         setTimeout(() => {
             setShowData(true)

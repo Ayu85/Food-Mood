@@ -13,18 +13,80 @@ const Full_Menu = () => {
   }, 4000);
   console.log(menuItems);
   return !showData ? <Full_Menu_Shimmer /> : (
-    <div className="flex flex-col border px-2 border-slate-300 mt-5">
-      <h1 className="text-lg font-bold mt-5">{menuItems[0]?.card?.card?.title}</h1>
-      <div>
-        {menuItems[0]?.card?.card?.itemCards?.map((items) => {
-          return <Menu_Card {...items?.card?.info} key={items?.info?.id} />
-        })}
+    <>
+      <div className="flex flex-col border px-2 border-slate-300 mt-5">
+        <h1 className="text-lg font-bold mt-5">{menuItems[0]?.card?.card?.title}</h1>
+        <div>
+          {menuItems[0]?.card?.card?.itemCards?.map((items) => {
+            return <Menu_Card {...items?.card?.info} key={items?.info?.id} />
+          })}
+        </div>
       </div>
-    </div>
+      <div className="flex flex-col border px-2 border-slate-300 mt-5">
+        <h1 className="text-lg font-bold mt-5">{menuItems[1]?.card?.card?.title}</h1>
+        <div>
+          {menuItems[1]?.card?.card?.itemCards?.map((items) => {
+            return <Menu_Card {...items?.card?.info} key={items?.info?.id} />
+          })}
+        </div>
+      </div>
+      <div className="flex flex-col border px-2 border-slate-300 mt-5">
+        <h1 className="text-lg font-bold mt-5">{menuItems[2]?.card?.card?.title}</h1>
+        <div>
+          {menuItems[2]?.card?.card?.itemCards?.map((items) => {
+            return <Menu_Card {...items?.card?.info} key={items?.info?.id} />
+          })}
+        </div>
+      </div>
+      <div className="flex flex-col border px-2 border-slate-300 mt-5">
+        <h1 className="text-lg font-bold mt-5">{menuItems[3]?.card?.card?.title}</h1>
+        <div>
+          {menuItems[3]?.card?.card?.itemCards?.map((items) => {
+            return <Menu_Card {...items?.card?.info} key={items?.info?.id} />
+          })}
+        </div>
+      </div>
+      <div className="flex flex-col border px-2 border-slate-300 mt-5">
+        <h1 className="text-lg font-bold mt-5">{menuItems[4]?.card?.card?.title}</h1>
+        <div>
+          {menuItems[4]?.card?.card?.itemCards?.map((items) => {
+            return <Menu_Card {...items?.card?.info} key={items?.info?.id} />
+          })}
+        </div>
+      </div> <div className="flex flex-col border px-2 border-slate-300 mt-5">
+        <h1 className="text-lg font-bold mt-5">{menuItems[5]?.card?.card?.title}</h1>
+        <div>
+          {menuItems[5]?.card?.card?.itemCards?.map((items) => {
+            return <Menu_Card {...items?.card?.info} key={items?.info?.id} />
+          })}
+        </div>
+      </div> <div className="flex flex-col border px-2 border-slate-300 mt-5">
+        <h1 className="text-lg font-bold mt-5">{menuItems[6]?.card?.card?.title}</h1>
+        <div>
+          {menuItems[6]?.card?.card?.itemCards?.map((items) => {
+            return <Menu_Card {...items?.card?.info} key={items?.info?.id} />
+          })}
+        </div>
+      </div> <div className="flex flex-col border px-2 border-slate-300 mt-5">
+        <h1 className="text-lg font-bold mt-5">{menuItems[7]?.card?.card?.title}</h1>
+        <div>
+          {menuItems[7]?.card?.card?.itemCards?.map((items) => {
+            return <Menu_Card {...items?.card?.info} key={items?.info?.id} />
+          })}
+        </div>
+      </div> <div className="flex flex-col border px-2 border-slate-300 mt-5">
+        <h1 className="text-lg font-bold mt-5">{menuItems[8]?.card?.card?.title}</h1>
+        <div>
+          {menuItems[8]?.card?.card?.itemCards?.map((items) => {
+            return <Menu_Card {...items?.card?.info} key={items?.info?.id} />
+          })}
+        </div>
+      </div>
+    </>
   )
 }
 const Menu_Card = ({ imageId, name, description, isVeg, price }) => {
-  return <div className="flex lg:max-w-[900px] md:min-w-[700px] min-w-[450px] mt-1 items-center gap-56 justify-between border-b border-b-slate-300 py-2">
+  return <div className="flex lg:max-w-[900px] lg:min-w-[900px] md:min-w-[700px] min-w-[450px] mt-1 items-center gap-56 justify-between border-b border-b-slate-300 py-2">
     <div>
       <img src={isVeg ? veg : nonveg} alt="" className="w-7" />
       <h1 className="text-md font-bold">{name}</h1>

@@ -13,15 +13,18 @@ const Full_Menu = () => {
   }, 4000);
   console.log(menuItems);
   return !showData ? <Full_Menu_Shimmer /> : (
-    <div>
-      {menuItems[0]?.card?.card?.itemCards?.map((items) => {
-        return <Menu_Card {...items?.card?.info} key={items?.info?.id} />
-      })}
+    <div className="flex flex-col">
+      <h1 className="text-lg font-bold mt-5">{menuItems[0]?.card?.card?.title}</h1>
+      <div>
+        {menuItems[0]?.card?.card?.itemCards?.map((items) => {
+          return <Menu_Card {...items?.card?.info} key={items?.info?.id} />
+        })}
+      </div>
     </div>
   )
 }
 const Menu_Card = ({ imageId, name, description, isVeg, price }) => {
-  return <div className="flex lg:min-w-[900px] md:min-w-[700px] min-w-[450px] mt-5 items-center gap-56 justify-between border-b border-b-slate-300 py-2">
+  return <div className="flex lg:min-w-[900px] md:min-w-[700px] min-w-[450px] mt-1 items-center gap-56 justify-between border-b border-b-slate-300 py-2">
     <div>
       <img src={isVeg ? veg : nonveg} alt="" className="w-7" />
       <h1 className="text-md font-bold">{name}</h1>

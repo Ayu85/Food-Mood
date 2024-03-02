@@ -15,12 +15,12 @@ const Full_Menu = () => {
   )
 }
 const Menu_Card = ({ imageId, name, description, isVeg, price }) => {
-  return <div>
+  return <div className="flex">
     <div>
       <img src={isVeg ? veg : nonveg} alt="" className="w-7" />
       <h1>{name}</h1>
-      <h1>{price / 100}</h1>
-      <h1>{description}</h1>
+      <h1>Rs.{price / 100}</h1>
+      <h1>{description?.substring(0,80)}</h1>
     </div>
     <div>
       <img src={IMAGE_API + imageId} alt="" className="w-20" />

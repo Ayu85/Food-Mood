@@ -21,7 +21,7 @@ const Menu_Card = ({ imageId, name, description, isVeg, price }) => {
       <h1>{description}</h1>
     </div>
     <div>
-      <img src={IMAGE_API + imageId} alt="" />
+      <img src={IMAGE_API + imageId} alt="" className="w-20" />
     </div>
   </div>
 

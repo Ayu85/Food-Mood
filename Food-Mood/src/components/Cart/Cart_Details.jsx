@@ -10,6 +10,9 @@ const Cart_Details = () => {
             <div>
 
             </div>
+            <div>
+                
+            </div>
         </div>
     )
 }

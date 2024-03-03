@@ -1,6 +1,4 @@
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux"
-import { addRestaurant } from "../../redux/slices/CartSlice";
+import {  useSelector } from "react-redux"
 import { IMAGE_API } from "../../constants";
 import veg from '../../assets/veg.png'
 import nonveg from '../../assets/nonveg.png'

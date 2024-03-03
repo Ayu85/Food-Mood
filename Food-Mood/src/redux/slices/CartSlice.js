@@ -4,7 +4,8 @@ const CartSlice = createSlice({
     name: 'cart',
     initialState: {
         items: [],
-        totalPrice: 0
+        totalPrice: 0,
+        restaurant: null
     },
     reducers: {
         addItem: (state, action) => {
@@ -18,8 +19,11 @@ const CartSlice = createSlice({
         },
         removeItem: (state, action) => {
             state.items.splice(action.payload)
+        },
+        addRestaurant: (state, action) => {
+            state.restaurant = action.payload
         }
     }
 })
 export default CartSlice.reducer
-export const { addItem, addPrice, removeItem, subtractPrice } = CartSlice.actions
+export const { addItem, addPrice, removeItem, subtractPrice ,addRestaurant} = CartSlice.actions

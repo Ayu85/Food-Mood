@@ -9,8 +9,8 @@ const Cart_Details = () => {
     const restaurantDetails = useSelector(store => store.menu.restDetail)
     const totalPrice = useSelector(store => store.cart.totalPrice)
     return (
-        <div className="min-w-[600px] shadow-2xl shadow-[#CE862B] max-w-[600px]  border-zinc-600 min-h-[500px] mt-52">
-            <div className="flex justify-between px-3 items-center py-3 border-b border-b-zinc-300">
+        <div className="min-w-[600px]  shadow-2xl shadow-[#CE862B] max-w-[600px]  border-zinc-600 min-h-[500px] mt-52">
+            <div className="flex  justify-between px-3 items-center py-3 border-b border-b-zinc-300">
                 <div>
                     <h1 className="font-semibold text-lg font-[gorg-regular]">{restaurantDetails?.name}</h1>
                     <h1 className="font-light text-sm font-[gorg-regular]">{restaurantDetails?.areaName}</h1>
@@ -23,16 +23,19 @@ const Cart_Details = () => {
                         return <div key={item?.id} className="flex justify-between font-semibold items-center gap-2">
                             <div className="flex items-center gap-2">
                                 <h1><img src={item.isVeg === 1 ? veg : nonveg} alt="" className="w-5" /></h1>
-                                <h1 className="line-clamp-1">{item?.name?.substring(0,30)}</h1>
+                                <h1 className="line-clamp-1">{item?.name?.substring(0, 30)}</h1>
                             </div>
                             <h1 className="text-slate-600">Rs. {item?.price}</h1>
                         </div>
                     })}
                 </div>
             </div>
-            <div  className="flex font-semibold justify-between px-5 items-center py-3 border-b border-b-zinc-600">
+            <div className="flex font-semibold justify-between px-5 items-center py-3 border-b border-b-zinc-600">
                 <h1 className="text-lg">Total </h1>
                 <h1>Rs. {totalPrice}</h1>
+            </div>
+            <div className="flex items-center justify-center mt-10 ">
+                <h1 className="bg-[#00D26A] cursor-pointer hover:bg-yellow-500 transition-all hover:scale-110 duration-100 text-white font-semibold text-lg w-72 py-2 text-center">Proceed To Pay Rs. {totalPrice}</h1>
             </div>
         </div>
     )

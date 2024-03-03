@@ -18,10 +18,11 @@ const Cart_Details = () => {
                 <img src={IMAGE_API + restaurantDetails?.cloudinaryImageId} alt="logo" className="w-24 h-20" />
             </div>
             <div>
-                <div>
+                <div className="flex  flex-col gap-2 px-5 py-10">
                     {cartItems?.map((item) => {
-                        return <div key={item?.info?.id}>
-                            <h1><img src={item.isVeg===1 ? veg : nonveg} alt="" /></h1>
+                        return <div key={item?.id} className="flex items-center gap-2">
+                            <h1><img src={item.isVeg === 1 ? veg : nonveg} alt="" className="w-5" /></h1>
+                            <h1>{item?.name}</h1>
                         </div>
                     })}
                 </div>

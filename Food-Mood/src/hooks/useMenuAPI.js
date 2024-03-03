@@ -12,7 +12,7 @@ const useMenuAPI = (id) => {
             const json = await raw.json();
             dispatch(addFullMenu(json?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards))
             dispatch(addRestDetails(json?.data?.cards[0]?.card?.card?.info))
-            dispatch(addRestaurant(json?.data?.cards[0]?.card?.card?.info?.name))
+            dispatch(addRestaurant(json?.data?.cards[0]?.card?.card?.info))
             dispatch(clearCart())
         }
         getRestMenu()

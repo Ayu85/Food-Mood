@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { addFilteredMenu, addFullMenu, addRestDetails } from "../redux/slices/Menu"
-import { addRestaurant } from "../redux/slices/CartSlice"
+import { addRestaurant, clearCart } from "../redux/slices/CartSlice"
 
 const useMenuAPI = (id) => {
     const dispatch = useDispatch()
@@ -13,7 +13,7 @@ const useMenuAPI = (id) => {
             dispatch(addFullMenu(json?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards))
             dispatch(addRestDetails(json?.data?.cards[0]?.card?.card?.info))
             dispatch(addRestaurant(json?.data?.cards[0]?.card?.card?.info?.name))
-            dispatch()
+            dispatch(clearCart())
         }
         getRestMenu()
     }, [])

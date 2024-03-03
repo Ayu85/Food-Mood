@@ -5,7 +5,7 @@ import veg from '../../assets/veg.png'
 import nonveg from '../../assets/nonveg.png'
 import Full_Menu_Shimmer from "../ShimmerUI/MenuShimmer/Full_Menu_Shimmer"
 import { useState } from "react"
-import { addItem, addPrice, removeItem, subtractPrice } from '../../redux/slices/CartSlice'
+import { addItem, addPrice } from '../../redux/slices/CartSlice'
 const Full_Menu = () => {
   const menuItems = useSelector(store => store.menu.filteredMenu)
   const [showData, setShowData] = useState(false)

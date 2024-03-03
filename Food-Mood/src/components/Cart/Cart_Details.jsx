@@ -7,7 +7,7 @@ const Cart_Details = () => {
     const restaurantDetails = useSelector(store => store.menu.restDetail)
     const totalPrice = useSelector(store => store.cart.totalPrice)
     return (
-        <div className="min-w-[600px]  shadow-2xl shadow-[#CE862B] max-w-[600px]  border-zinc-600 min-h-[500px] mt-52">
+        <div className="lg:min-w-[600px] md:min-w-[600px] shadow-2xl shadow-[#CE862B] lg:max-w-[600px] md:max-w-[600px] border-zinc-600 min-h-[400px] mt-52">
             <div className="flex  justify-between px-3 items-center py-3 border-b border-b-zinc-300">
                 <div>
                     <h1 className="font-semibold text-lg font-[gorg-regular]">{restaurantDetails?.name}</h1>

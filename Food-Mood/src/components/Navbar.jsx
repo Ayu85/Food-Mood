@@ -28,7 +28,9 @@ const Navbar = () => {
                 <li className='flex items-center gap-2 cursor-pointer  hover:bg-[#F4BD59] px-4 transition-all py-1 rounded-full'><MdCallSplit className='text-2xl' />Contact</li>
             </ul>
             <div className=' gap-2 hidden lg:flex  items-center'>
-                <TiShoppingCart className='text-2xl hover:scale-125 transition-all cursor-pointer' />
+                <TiShoppingCart onClick={() => {
+                    navigate('/cart')
+                }} className='text-2xl hover:scale-125 transition-all cursor-pointer' />
                 <button>Support</button>
             </div>
         </div>

@@ -22,8 +22,11 @@ const CartSlice = createSlice({
         },
         addRestaurant: (state, action) => {
             state.restaurant = action.payload
+        },
+        clearCart: (state) => {
+            state.items = []
         }
     }
 })
 export default CartSlice.reducer
-export const { addItem, addPrice, removeItem, subtractPrice ,addRestaurant} = CartSlice.actions
+export const { addItem, addPrice, removeItem, subtractPrice, addRestaurant, clearCart } = CartSlice.actions

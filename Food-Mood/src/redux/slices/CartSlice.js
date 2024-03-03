@@ -18,7 +18,7 @@ const CartSlice = createSlice({
             state.totalPrice -= action.payload
         },
         removeItem: (state, action) => {
-            state.items.splice(action.payload)
+            state.items.splice(action.payload,1)
         },
         addRestaurant: (state, action) => {
             state.restaurant = action.payload

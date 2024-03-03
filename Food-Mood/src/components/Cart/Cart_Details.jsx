@@ -6,7 +6,7 @@ import nonveg from '../../assets/nonveg.png'
 import emptycart from '../../assets/empty cart.png'
 import { useNavigate } from "react-router-dom";
 import { IoIosRemoveCircle } from "react-icons/io";
-import { removeItem } from "../../redux/slices/CartSlice";
+import { removeItem, subtractPrice } from "../../redux/slices/CartSlice";
 
 const Cart_Details = () => {
     const cartItems = useSelector(store => store.cart.items)
@@ -42,6 +42,7 @@ const Cart_Details = () => {
                                     <h1 className="text-slate-600">Rs. {item?.price}</h1>
                                     <span><IoIosRemoveCircle onClick={() => {
                                         dispatch(removeItem(key))
+                                        dispatch(subtractPrice(item?.price))
                                     }} className="text-red-600 text-lg cursor-pointer hover:scale-110" />
                                     </span>
                                 </div>

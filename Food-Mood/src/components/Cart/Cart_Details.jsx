@@ -3,16 +3,20 @@ import { IMAGE_API } from "../../constants";
 import veg from '../../assets/veg.png'
 import nonveg from '../../assets/nonveg.png'
 import emptycart from '../../assets/empty cart.png'
+import { useNavigate } from "react-router-dom";
 const Cart_Details = () => {
     const cartItems = useSelector(store => store.cart.items)
     const restaurantDetails = useSelector(store => store.menu.restDetail)
     const totalPrice = useSelector(store => store.cart.totalPrice)
+    const navigate = useNavigate()
     return (
         <div className="lg:min-w-[600px] min-w-[450px] py-3 md:min-w-[600px] shadow-2xl shadow-[#CE862B] lg:max-w-[600px] md:max-w-[600px] border-zinc-600 min-h-[400px] mt-52">
             {cartItems?.length === 0 ? <div className="flex flex-col px-2 items-center py-3 justify-center gap-5">
-                <img src={emptycart} alt=""  className="w-72 animate-[pulse_1s_infinite] "/>
+                <img src={emptycart} alt="" className="w-72 animate-[pulse_1s_infinite] " />
                 <h1 className="text-xl font-bold text-orange-600">Your cart is feeling a little light – time to fill it up!</h1>
-                <h1 className="bg-[#00D26A] cursor-pointer hover:bg-yellow-500 transition-all hover:scale-110 duration-100 text-white font-semibold text-lg w-72 py-2 text-center">Explore Taste Near You</h1>
+                <h1 onClick={() => {
+                    navigate("/restaurants")
+                }} className="bg-[#00D26A] cursor-pointer hover:bg-yellow-500 transition-all hover:scale-110 duration-100 text-white font-semibold text-lg w-72 py-2 text-center">Explore Taste Near You</h1>
 
             </div> : <><div className="flex  justify-between px-3 items-center py-3 border-b border-b-zinc-300">
                 <div>

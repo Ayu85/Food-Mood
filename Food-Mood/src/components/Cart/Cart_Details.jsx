@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux"
 import { addRestaurant } from "../../redux/slices/CartSlice";
 import { IMAGE_API } from "../../constants";
+import veg from '../../assets/veg.png'
+import nonveg from '../../assets/nonveg.png'
 const Cart_Details = () => {
     const cartItems = useSelector(store => store.cart.items)
     const restaurantDetails = useSelector(store => store.menu.restDetail)
@@ -16,7 +18,13 @@ const Cart_Details = () => {
                 <img src={IMAGE_API + restaurantDetails?.cloudinaryImageId} alt="logo" className="w-24 h-20" />
             </div>
             <div>
-
+                <div>
+                    {cartItems?.map((item) => {
+                        return <div key={item?.info?.id}>
+                            <h1><img src={item.isVeg===1 ? veg : nonveg} alt="" /></h1>
+                        </div>
+                    })}
+                </div>
             </div>
         </div>
     )

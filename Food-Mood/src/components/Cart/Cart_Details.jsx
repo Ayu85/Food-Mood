@@ -18,11 +18,14 @@ const Cart_Details = () => {
                 <img src={IMAGE_API + restaurantDetails?.cloudinaryImageId} alt="logo" className="w-24 h-20" />
             </div>
             <div>
-                <div className="flex  flex-col gap-2 px-5 py-10">
+                <div className="flex  flex-col gap-2 px-5 pt-10 border-b border-slate-600">
                     {cartItems?.map((item) => {
-                        return <div key={item?.id} className="flex items-center gap-2">
-                            <h1><img src={item.isVeg === 1 ? veg : nonveg} alt="" className="w-5" /></h1>
-                            <h1>{item?.name}</h1>
+                        return <div key={item?.id} className="flex justify-between font-semibold items-center gap-2">
+                            <div className="flex gap-2">
+                                <h1><img src={item.isVeg === 1 ? veg : nonveg} alt="" className="w-5" /></h1>
+                                <h1>{item?.name}</h1>
+                            </div>
+                            <h1 className="text-slate-600">Rs. {item?.price}</h1>
                         </div>
                     })}
                 </div>

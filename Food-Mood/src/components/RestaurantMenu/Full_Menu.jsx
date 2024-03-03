@@ -97,7 +97,8 @@ const Menu_Card = ({ imageId, name, description, isVeg, price }) => {
     <div className="flex flex-col items-center gap-1 text-green-700">
       <img src={IMAGE_API + imageId} alt="" className="w-28 h-24 hidden md:block lg:block" />
       <button onClick={() => {
-        dispatch(addItem({ name: name, price: price / 100, description: description, img: imageId }))
+        dispatch(addItem({ name: name, price: price / 100, description: description, img: imageId, isVeg: isVeg }))
+        dispatch(addPrice(price / 100))
       }} className="border border-slate-300 font-semibold w-28 py-1 active:bg-black active:scale-125 transition-all">Add+</button>
     </div>
   </div>

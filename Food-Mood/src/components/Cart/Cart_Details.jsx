@@ -8,9 +8,12 @@ const Cart_Details = () => {
 
     return (
         <div className="min-w-[600px] shadow-2xl shadow-[#CE862B] max-w-[600px]  border-zinc-600 min-h-[500px] mt-52">
-            <div className="flex justify-between px-3">
-                <img src={IMAGE_API + restaurantDetails?.cloudinaryImageId} alt="logo" className="w-14" />
-                <h1>{restaurantDetails?.name}</h1>
+            <div className="flex justify-between px-3 items-center py-3 border-b border-b-zinc-300">
+                <div>
+                    <h1 className="font-semibold text-lg font-[gorg-regular]">{restaurantDetails?.name}</h1>
+                    <h1 className="font-light text-sm font-[gorg-regular]">{restaurantDetails?.areaName}</h1>
+                </div>
+                <img src={IMAGE_API + restaurantDetails?.cloudinaryImageId} alt="logo" className="w-24 h-20" />
             </div>
             <div>
 

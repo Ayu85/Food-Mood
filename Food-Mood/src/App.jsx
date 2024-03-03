@@ -6,6 +6,7 @@ import store from './redux/store'
 import Main from './components/Banner-Link-Pages/Pizza/Main'
 import ChineseMain from './components/Banner-Link-Pages/Chinese/ChineseMain'
 import Rest_Menu_Main from './components/RestaurantMenu/Rest_Menu_Main'
+import Cart_Home from './components/Cart/Cart_Home'
 const appRoute = createBrowserRouter([
   {
     path: '/',
@@ -27,6 +28,11 @@ const appRoute = createBrowserRouter([
   {
     path: '/menu/:id',
     element: <Rest_Menu_Main />
+  }
+  ,
+  {
+    path: '/cart',
+    element: <Cart_Home />
   }
 ])
 function App() {

@@ -4,6 +4,8 @@ import veg from '../../assets/veg.png'
 import nonveg from '../../assets/nonveg.png'
 import emptycart from '../../assets/empty cart.png'
 import { useNavigate } from "react-router-dom";
+import { IoIosRemoveCircle } from "react-icons/io";
+
 const Cart_Details = () => {
     const cartItems = useSelector(store => store.cart.items)
     const restaurantDetails = useSelector(store => store.menu.restDetail)
@@ -33,7 +35,11 @@ const Cart_Details = () => {
                                     <h1><img src={item.isVeg === 1 ? veg : nonveg} alt="" className="w-5" /></h1>
                                     <h1 className="line-clamp-1">{item?.name?.substring(0, 30)}</h1>
                                 </div>
-                                <h1 className="text-slate-600">Rs. {item?.price}</h1>
+                                <div className="flex items-center gap-2">
+                                    <h1 className="text-slate-600">Rs. {item?.price}</h1>
+                                    <span><IoIosRemoveCircle className="text-red-600 text-lg cursor-pointer hover:scale-110"/>
+                                    </span>
+                                </div>
                             </div>
                         })}
                     </div>

@@ -6,21 +6,20 @@ import nonveg from '../../assets/nonveg.png'
 import Full_Menu_Shimmer from "../ShimmerUI/MenuShimmer/Full_Menu_Shimmer"
 import { useState } from "react"
 import { addItem, addPrice } from '../../redux/slices/CartSlice'
-import toast, { Toaster } from 'react-hot-toast';
+
 
 const Full_Menu = () => {
   const menuItems = useSelector(store => store.menu.filteredMenu)
   const [showData, setShowData] = useState(false)
-  const notify = () => toast('Here is your toast.');
 
   setTimeout(() => {
     setShowData(true)
   }, 2000);
   return !showData ? <Full_Menu_Shimmer /> : (
     <>
-   
+
       {/* Same as */}
-     
+
       <div className="flex flex-col border px-2 border-slate-300 mt-5">
         <h1 className="text-lg font-bold mt-5">{menuItems[0]?.card?.card?.title}</h1>
         <div>
@@ -93,11 +92,13 @@ const Full_Menu = () => {
   )
 }
 const Menu_Card = ({ imageId, name, description, isVeg, price, defaultPrice }) => {
+ 
+
   const dispatch = useDispatch()
   const mainPrice = price / 100;
   const defPrice = defaultPrice / 100;
   return <div className="flex lg:max-w-[900px] lg:min-w-[900px] md:min-w-[700px] min-w-[450px] max-w-[450px] mt-1 items-center gap-56 justify-between border-b border-b-slate-300 py-2">
-  
+    
     <div>
       <img src={isVeg ? veg : nonveg} alt="" className="w-7" />
       <h1 className="text-md font-bold">{name}</h1>
@@ -109,7 +110,7 @@ const Menu_Card = ({ imageId, name, description, isVeg, price, defaultPrice }) =
       <button onClick={() => {
         dispatch(addItem({ name: name, price: mainPrice, description: description, img: imageId, isVeg: isVeg, defaultPrice: defPrice }))
         dispatch(addPrice(mainPrice || defPrice))
-        
+       
       }} className="border border-slate-300 font-semibold w-28 py-1 active:bg-black active:scale-125 transition-all">Add+</button>
     </div>
   </div>

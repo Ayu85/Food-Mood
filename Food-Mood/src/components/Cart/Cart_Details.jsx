@@ -39,10 +39,10 @@ const Cart_Details = () => {
                                     <h1 className="line-clamp-1">{item?.name?.substring(0, 30)}</h1>
                                 </div>
                                 <div className="flex items-center gap-2">
-                                    <h1 className="text-slate-600">Rs. {item?.price}</h1>
+                                    <h1 className="text-slate-600">Rs. {item?.price || item?.defaultPrice}</h1>
                                     <span><IoIosRemoveCircle onClick={() => {
                                         dispatch(removeItem(key))
-                                        dispatch(subtractPrice(item.price))
+                                        dispatch(subtractPrice(item.price || item.defaultPrice))
                                     }} className="text-red-600 text-lg cursor-pointer hover:scale-110" />
                                     </span>
                                 </div>

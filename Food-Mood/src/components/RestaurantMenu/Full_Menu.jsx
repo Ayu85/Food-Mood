@@ -87,18 +87,20 @@ const Full_Menu = () => {
 }
 const Menu_Card = ({ imageId, name, description, isVeg, price, defaultPrice }) => {
   const dispatch = useDispatch()
+  const mainPrice = price / 100;
+  const defPrice = defaultPrice / 100;
   return <div className="flex lg:max-w-[900px] lg:min-w-[900px] md:min-w-[700px] min-w-[450px] max-w-[450px] mt-1 items-center gap-56 justify-between border-b border-b-slate-300 py-2">
     <div>
       <img src={isVeg ? veg : nonveg} alt="" className="w-7" />
       <h1 className="text-md font-bold">{name}</h1>
-      <h1>Rs.{price/100 || defaultPrice/100}</h1>
+      <h1>Rs.{mainPrice || defPrice}</h1>
       <h1 className="line-clamp-2 font-light text-sm pt-2 lg:line-clamp-none md:line-clamp-none">{description?.substring(0, 80)}</h1>
     </div>
     <div className="flex flex-col items-center gap-1 text-green-700">
       <img src={IMAGE_API + imageId} alt="" className="w-28 h-24 hidden md:block lg:block" />
       <button onClick={() => {
-        dispatch(addItem({ name: name, price: price / 100, description: description, img: imageId, isVeg: isVeg }))
-        dispatch(addPrice(price / 100))
+        dispatch(addItem({ name: name, price: mainPrice, description: description, img: imageId, isVeg: isVeg, defaultPrice: defPrice }))
+        dispatch(addPrice(mainPrice || defPrice))
       }} className="border border-slate-300 font-semibold w-28 py-1 active:bg-black active:scale-125 transition-all">Add+</button>
     </div>
   </div>

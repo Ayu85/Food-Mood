@@ -6,10 +6,13 @@ import nonveg from '../../assets/nonveg.png'
 import Full_Menu_Shimmer from "../ShimmerUI/MenuShimmer/Full_Menu_Shimmer"
 import { useState } from "react"
 import { addItem, addPrice } from '../../redux/slices/CartSlice'
+import toast, { Toaster } from 'react-hot-toast';
 
 const Full_Menu = () => {
   const menuItems = useSelector(store => store.menu.filteredMenu)
   const [showData, setShowData] = useState(false)
+  const notify = () => toast('Here is your toast.');
+
   setTimeout(() => {
     setShowData(true)
   }, 2000);

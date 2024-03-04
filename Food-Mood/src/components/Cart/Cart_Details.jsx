@@ -42,7 +42,7 @@ const Cart_Details = () => {
                                     <h1 className="text-slate-600">Rs. {item?.price}</h1>
                                     <span><IoIosRemoveCircle onClick={() => {
                                         dispatch(removeItem(key))
-                                        dispatch(subtractPrice(item?.price))
+                                        dispatch(subtractPrice(item.price))
                                     }} className="text-red-600 text-lg cursor-pointer hover:scale-110" />
                                     </span>
                                 </div>

@@ -12,13 +12,13 @@ const CartSlice = createSlice({
             state.items.push(action.payload)
         },
         addPrice: (state, action) => {
-            state.totalPrice += action.payload
+            state.totalPrice = state.totalPrice + action.payload
         },
         subtractPrice: (state, action) => {
-            state.totalPrice -= action.payload
+            state.totalPrice = state.totalPrice - action.payload
         },
         removeItem: (state, action) => {
-            state.items.splice(action.payload,1)
+            state.items.splice(action.payload, 1)
         },
         addRestaurant: (state, action) => {
             state.restaurant = action.payload

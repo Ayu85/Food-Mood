@@ -13,7 +13,7 @@ const Rest_Details = () => {
     useEffect(() => {
         setTimeout(() => {
             setShowData(true)
-        }, 4000);
+        }, 2000);
     }, [])
     return !showData ? <HeaderShimmer /> : (
         <div className="flex  min-w-[450px] justify-between lg:gap-[410px] md:gap-44 gap-10  px-5 py-5 mt-44 items-start border border-slate-300 rounded-l">

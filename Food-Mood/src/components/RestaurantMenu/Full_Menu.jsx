@@ -11,7 +11,7 @@ const Full_Menu = () => {
   const [showData, setShowData] = useState(false)
   setTimeout(() => {
     setShowData(true)
-  }, 4000);
+  }, 2000);
   return !showData ? <Full_Menu_Shimmer /> : (
     <>
       <div className="flex flex-col border px-2 border-slate-300 mt-5">

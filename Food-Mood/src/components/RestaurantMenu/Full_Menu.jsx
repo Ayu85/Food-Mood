@@ -85,13 +85,13 @@ const Full_Menu = () => {
     </>
   )
 }
-const Menu_Card = ({ imageId, name, description, isVeg, price }) => {
+const Menu_Card = ({ imageId, name, description, isVeg, price, defaultPrice }) => {
   const dispatch = useDispatch()
   return <div className="flex lg:max-w-[900px] lg:min-w-[900px] md:min-w-[700px] min-w-[450px] max-w-[450px] mt-1 items-center gap-56 justify-between border-b border-b-slate-300 py-2">
     <div>
       <img src={isVeg ? veg : nonveg} alt="" className="w-7" />
       <h1 className="text-md font-bold">{name}</h1>
-      <h1>Rs.{price / 100}</h1>
+      <h1>Rs.{price / 100 || defaultPrice / 100}</h1>
       <h1 className="line-clamp-2 font-light text-sm pt-2 lg:line-clamp-none md:line-clamp-none">{description?.substring(0, 80)}</h1>
     </div>
     <div className="flex flex-col items-center gap-1 text-green-700">

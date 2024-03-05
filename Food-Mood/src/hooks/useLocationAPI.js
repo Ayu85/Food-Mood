@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { addLocation } from "../redux/slices/Location";
 
-const useLocation = () => {
+const LocationAPI = () => {
     const [position, setPosition] = useState({ latitude: null, longitude: null });
     const dispatch = useDispatch()
     useEffect(() => {
@@ -20,4 +20,4 @@ const useLocation = () => {
     dispatch(addLocation({ latitude: position.latitude, longitude: position.longitude }))
 }
 
-export default useLocation
+export default LocationAPI

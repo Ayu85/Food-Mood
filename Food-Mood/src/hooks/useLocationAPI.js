@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import { addLocation } from "../redux/slices/Location";
 
 const useLocation = () => {
     const [position, setPosition] = useState({ latitude: null, longitude: null });
-
+    const dispatch = useDispatch()
     useEffect(() => {
         if ("geolocation" in navigator) {
             navigator.geolocation.getCurrentPosition(function (position) {
@@ -15,7 +17,7 @@ const useLocation = () => {
             console.log("Geolocation is not available in your browser.");
         }
     }, []);
-    return position;
+    dispatch(addLocation({ latitude: position.latitude, longitude: position.longitude }))
 }
 
 export default useLocation

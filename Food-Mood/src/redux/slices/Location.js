@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit"
 
-const location = createSlice({
+const Location = createSlice({
     name: 'location',
     initialState: {
         value: { latitude: 26.8524588, longitude: 81.0202533 }
@@ -12,5 +12,5 @@ const location = createSlice({
     }
 
 })
-export default location.reducer;
-export const { addLocation } = location.actions
+export default Location.reducer;
+export const { addLocation } = Location.actions

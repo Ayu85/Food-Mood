@@ -5,6 +5,7 @@ import PizzaData from './slices/PizzaData';
 import ChineseData from './slices/ChineseData';
 import Menu from './slices/Menu';
 import CartSlice from './slices/CartSlice';
+import Location from './slices/Location';
 
 const store = configureStore({
     reducer: {
@@ -13,7 +14,8 @@ const store = configureStore({
         pizza_data: PizzaData,
         chinese_data: ChineseData,
         menu: Menu,
-        cart: CartSlice
+        cart: CartSlice,
+        location: Location
     }
 })
 export default store;

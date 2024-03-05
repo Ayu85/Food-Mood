@@ -5,7 +5,6 @@ import Intro from "./Intro"
 import Navbar from "./Navbar"
 
 const Body = () => {
-  const userLocation = useLocation()
   return (
     <div className="selection:bg-[#F7B035] overflow-hidden">
       <Navbar />

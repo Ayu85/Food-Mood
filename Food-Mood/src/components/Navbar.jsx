@@ -7,6 +7,8 @@ import { MdCallSplit } from "react-icons/md";
 import { useDispatch, useSelector } from 'react-redux';
 import { toogleNav } from '../redux/slices/NavScrolled';
 import { useNavigate } from 'react-router-dom'
+import { FaLocationCrosshairs } from "react-icons/fa6";
+
 const Navbar = () => {
     const dispatch = useDispatch()
     const navigate = useNavigate()
@@ -31,7 +33,8 @@ const Navbar = () => {
                 <TiShoppingCart onClick={() => {
                     navigate('/cart')
                 }} className='text-2xl hover:scale-125 transition-all cursor-pointer' />
-                <button>Support</button>
+                <button className='flex items-center gap-2 bg-white px-3 py-2 rounded-full hover:bg-black hover:text-yellow-400 transition-all duration-100'>Locate me<FaLocationCrosshairs />
+                </button>
             </div>
         </div>
     )

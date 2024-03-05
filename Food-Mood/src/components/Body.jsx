@@ -1,5 +1,4 @@
 // import { useEffect } from "react"
-import useLocation from "../hooks/useLocationAPI"
 import Hero from "./Hero"
 import Intro from "./Intro"
 import Navbar from "./Navbar"

@@ -111,7 +111,7 @@ const Menu_Card = ({ imageId, name, description, isVeg, price, defaultPrice }) =
         dispatch(addItem({ name: name, price: mainPrice, description: description, img: imageId, isVeg: isVeg, defaultPrice: defPrice }))
         dispatch(addPrice(mainPrice || defPrice))
        
-      }} className="border border-slate-300 font-semibold w-28 py-1 active:bg-black active:scale-125 transition-all">Add+</button>
+      }} className="border border-slate-300 font-semibold w-28 py-1 active:bg-black active:scale-125 delay-100 transition-all duration-200">Add+</button>
     </div>
   </div>
 
